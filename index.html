@@ -24,7 +24,7 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style> <!-- Зачем это здесь? -->
 
 </head>
 
@@ -41,12 +41,12 @@
 							<div class="name">Константин Константинович</div>
 						</div>
 						<div class="col-md-2 col-md-offset-6">
-							<div class="contacts"><a href="#">Мои контакты</a></div>
+							<div class="contacts"><a href="#">Мои контакты</a></div> <!-- Про ссылку я тоже писала в прошлом коммите. Почему новый создан новый репозиторий? Почему проигнорированы мои прошлые комментарии? Ты не справился с гитом? Пиши мне, я помогу. -->
 						</div>
 				</div>
 			</div>
 			</header>
-			<section class="content">
+			<section class="content"> <!-- Почему тут у тебя section? Жду ответ тут комментарием или в наш чатик) -->
 				<div class="container">
 					<div class="row">
 						<aside class="col-md-3">
@@ -64,11 +64,11 @@
 								<div class="row">
 									<div class="col-md-5">
 										<div class="foto">
-											<img src="img/foto.jpg" alt="123">
+											<img src="img/foto.jpg" alt="123"> <!-- Про alt я же тебе писала =(( -->
 										</div>
 									</div>
 									<div class="col-md-7">
-										<div class="about_me">
+										<div class="about_me"> <!-- HTML5 подарил нам чудные семантические теги, надо о них почитать и поменять div'ы на них =) -->
 											<h1>Обо мне</h1>
 											<div class="text">
 											<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись реторический коварный заманивший семь, составитель текста домах наш последний речью свой безопасную большой, гор которой меня до снова диких.</p>
@@ -90,11 +90,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-5">
-						<div class="legal">© Дизайн сайта был разработан в школе LoftSchool</div>
+						<div class="legal">© Дизайн сайта был разработан в школе LoftSchool</div><!--  Знак копирайта нужно вставить через спецсимвол -->
 					</div>
 					<div class="col-md-offset-5 col-md-2">
 						<div class="social">
-							<a href=""><img src="img/FaceBook.png" alt=""></a>
+							<a href=""><img src="img/FaceBook.png" alt=""></a> <!-- Здесь должны быть не картинки, а иконочный шрифт -->
 							<a href=""><img src="img/vk.png" alt=""></a>
 							<a href=""><img src="img/Twitter.png" alt=""></a>
 						</div>
@@ -108,7 +108,7 @@
 
 	</div>
 
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.min.css"> <!-- Тег link никогда не может существовать за переделами head -->
 	<script src="js/scripts.min.js"></script>
 
 </body>
