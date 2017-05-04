@@ -1,0 +1,67 @@
+@import "vars"
+.portfolio__title
+  font-size: 35px
+  font-family: 'fira-m', sans-serif
+  padding: 20px 0px
+.portfolio__block
+  width: 220px
+  box-shadow: 0 0 4px #9e9e9e
+  display: inline-block
+  border-radius: 10px 9px 9px 10px
+  margin-left: 10px
+  margin-bottom: 15px
+  &:first-child
+    margin-left: 0
+  &:focus
+    text-decoration: none
+  &:hover
+    text-decoration: none
+    .portfolio__desc
+      .portfolio__block_title
+        color: $red
+.portfolio__image
+  background-image: url('../img/app.jpg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  height: 175px
+  border-radius: 10px 10px 0 0
+.portfolio__desc
+  background-color: #fff
+  border-radius: 10px
+  padding: 20px
+.portfolio__block_title
+  font-size: 21px
+  line-height: 24px
+  color: #33c1e3
+.portfolio__text
+  color: #000
+  font-size: 14px
+.portfolio__type
+  color: #aeaeae
+  font-size: 18px
+  margin-top: 5px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце

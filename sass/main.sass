@@ -48,9 +48,13 @@ html, body
 	position: relative
 // global wrapper
 .wrapper
-	padding-bottom: 50px
-	min-height: 100%
+	height: 100%
 	background-color: #f6f6f6
+.content-wrapper
+	min-height: calc(100vh - 50px)
+
+
+
 
 // START HEADER HERE
 
@@ -101,6 +105,7 @@ aside
 					text-decoration: none
 				&:hover
 					text-decoration: none
+					color: #33c1e3
 				&:focus
 					padding-right: 25px
 					color: #33c1e3
@@ -108,65 +113,26 @@ aside
 					font-family: 'fira-b', sans-serif
 
 // ASIDE END
-.about_me
-	h1
-		font-size: 35px
-		font-family: 'fira-m', sans-serif
-	.text
-		font-size: 18px
-		font-family: 'fira-l', sans-serif
-
-.foto
-		text-align: center
-		margin-top: 30px
-		img
-			border-radius: 50%
-			border: 5px solid #fff
-
-.text
-	overflow-y: scroll
-	height: 320px
-	margin-bottom: 60px
-.button
-		a
-			display: inline-block
-			padding: 8px 15px
-			font-size: 14px
-			font-weight: bold
-			border: 2px solid #e85f61
-			border-radius: 80px
-			color: #e85f61
-			position: absolute
-			right: 0
-			transition: all .3s
-			&:hover
-				text-decoration: none
-				background-color: #e85f61
-				color: #fff
-
-
-// END SECTION CONTENT HERE
-
 
 footer
 	background-color: #414141
-	position: absolute
-	left: 0
-	bottom: 0
-	width: 100%
 	height: 50px
 	.legal
 		color: #9c9c9c
 		font-family: 'fira-l', sans-serif
 		font-size: 14px
 		line-height: 50px
-	.social
-		line-height: 50px
-		text-align: right
-
-
-
-
-
-
-@import "media" // Всегда в конце
+.social-btns
+	line-height: 50px
+	text-align: right
+	.btn
+		display: inline-block
+		background-color: #727272
+		color: #fff
+		width: 30px
+		height: 30px
+		line-height: 30px
+		text-align: center
+		border-radius: 50%
+		&:hover
+			background-color: #33c1e3
