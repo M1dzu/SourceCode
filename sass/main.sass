@@ -74,16 +74,74 @@ header
 	font-size: 18px
 	font-family: 'fira', sans-serif
 .contacts
-	a
+	&:hover
+		.contacts__dropdown
+			opacity: 1!important
+	.contacts__trigger
+		position: relative
 		font-size: 18px
 		font-family: 'fira-b', sans-serif
 		font-weight: bold
 		text-decoration: none
 		border-bottom: 1px dashed
-		color: #33c1e3
+
+		color: $accent
 		&:hover
 			color: #e85f61
+			.contacts__dropdown
+				display: block!important
 // END HEADER HERE
+
+.contacts__dropdown_list
+	list-style-type: none
+	padding: 0
+	margin: 0
+	.contacts__dropdown_item
+		line-height: 40px
+		.contacts__dropdown_link
+			color: #3d3d3d
+			&:hover
+				text-decoration: none
+				color: #3d3d3d
+			.fa
+				color: $accent
+
+.contacts__dropdown
+	position: absolute
+	top: 70px
+	left: -25px
+	width: 200px
+	z-index: 999
+	background-color: #fff
+	text-align: left
+	padding: 10px 20px
+	border-radius: 4px
+	border: 1px solid #d0d0d0
+	opacity: 0
+	transition: all .3s
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 46.22%
+		margin-top: -8px
+		background-color: #fff
+		width: 15px
+		height: 15px
+		transform: rotate(45deg)
+		border-top: 1px solid #d0d0d0
+		border-left: 1px solid #d0d0d0
+
+
+
+.contacts__dropdown_link
+	display: block
+	text-decoration: none
+
+.contacts__dropdown_text
+	padding-left: 10px
+
+
 
 // START SECTION CONTENT HERE
 
@@ -105,12 +163,17 @@ aside
 					text-decoration: none
 				&:hover
 					text-decoration: none
-					color: #33c1e3
+					color: $accent
 				&:focus
 					padding-right: 25px
-					color: #33c1e3
-					border-right: 6px solid #33c1e3
+					color: $accent
+					border-right: 6px solid $accent
 					font-family: 'fira-b', sans-serif
+.nav__item_active
+	padding-right: 25px
+	color: $accent
+	border-right: 6px solid $accent
+	font-family: 'fira-b', sans-serif
 
 // ASIDE END
 
@@ -135,4 +198,4 @@ footer
 		text-align: center
 		border-radius: 50%
 		&:hover
-			background-color: #33c1e3
+			background-color: $accent
