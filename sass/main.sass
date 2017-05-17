@@ -48,7 +48,7 @@ html, body
 	position: relative
 // global wrapper
 .wrapper
-	height: 100%
+	min-height: 100%
 	background-color: #f6f6f6
 .content-wrapper
 	min-height: calc(100vh - 50px)
@@ -67,16 +67,22 @@ header
 	background-color: #fff
 
 .logo
+	float: left
+	margin-right: 10px
 	img
 		border-radius: 50%
 		border: 3px solid #d5d5d5
 .name
 	font-size: 18px
 	font-family: 'fira', sans-serif
+
 .contacts
+	text-align: right
+	.fa__mobile
+		display: none
 	&:hover
 		.contacts__dropdown
-			opacity: 1!important
+			display: block
 	.contacts__trigger
 		position: relative
 		font-size: 18px
@@ -90,7 +96,7 @@ header
 			color: #e85f61
 			.contacts__dropdown
 				display: block!important
-// END HEADER HERE
+
 
 .contacts__dropdown_list
 	list-style-type: none
@@ -117,7 +123,7 @@ header
 	padding: 10px 20px
 	border-radius: 4px
 	border: 1px solid #d0d0d0
-	opacity: 0
+	display: none
 	transition: all .3s
 	&::after
 		content: ''
@@ -199,3 +205,9 @@ footer
 		border-radius: 50%
 		&:hover
 			background-color: $accent
+	.facebook
+		&:hover
+			background-color: #4463a6
+	.vk
+		&:hover
+			background-color: #5d99c3
